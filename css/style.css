@@ -1,0 +1,333 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+#navigation p {
+    cursor: pointer;
+    text-decoration: none;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.button{
+    background-color:#6D9DBA ;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align:center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button2{
+    background-color:#6D9DBA ;
+    border: none;
+    color: white;
+    width: 150px;
+    padding: 15px 32px;
+    display: flex;
+    text-align:center;
+    font-size: 16px;
+    margin: 40px auto;
+    cursor: pointer;
+    border-radius: 12px;
+    justify-content: center;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer; 
+}
+.button3{
+    position: absolute;
+    background-color:#6D9DBA ;
+    border: none;
+    color: white;
+    width: 200px;
+    padding: 15px 32px;
+    display: flex;
+    text-align:center;
+    font-size: 16px;
+    margin: 40px auto;
+    cursor: pointer;
+    border-radius: 12px;
+    justify-content: center;
+    text-decoration: none; 
+    top:430px;
+}
+#navBar{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+#navigation{
+  
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.social{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    position: absolute;
+    left:480px;
+    top:450px;
+}
+p{
+    margin: 20px;
+}
+#hero-image{
+    background: url(../images/123.jpg);
+    background-repeat: no-repeat;
+    position:relative;
+    border-radius: 15px;
+    width: 600px;
+    height: auto;
+    padding: 120px;
+    left: 120px;
+    
+}
+.hero-text{
+    top: 70%;
+    left: 30%;
+    transform: translate(90%,0%);
+    color: black;
+    background-color:rgb(218,247, 166, 0.8);
+    padding: 20px;
+    border-radius:12px;
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+    color: #FF5733;
+    font-size: 40px;
+}
+h4{
+    font-size: 30px;
+    font-weight: normal;
+}
+h6{
+    font-size: 45px;
+}
+.list{
+    text-align:initial;
+    margin-left: 70px;
+}
+#subHeading{
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+
+/*#workCard{
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "website"
+    "iwatch";
+}*/
+.workCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 77%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
+    background-color:rgb(218,247, 166, 0.8);
+}
+.aboutMe h3{
+    position: absolute;
+    text-align: center;
+    right: 100px;
+    top: -70px;
+}
+.aboutMe{
+    margin: 30px auto;
+    left: 50px;
+    display: flex;
+    position: relative;
+    width: 700px;
+    height: 540px;
+    background-color:rgb(218,247, 166, 0.8);
+}
+.aboutMeImage{
+    position: absolute;
+    left:-40px
+}
+.aboutMeImage img{
+    width: 350px;
+    border-radius: 30px;
+    left: -200px;
+    top:50px;
+    position: absolute;
+}
+.aboutMeImage p{
+    width: 400px;
+    margin: 20px;
+    display: block;
+    position: absolute;
+    left: 250px;
+    top:80px;
+    line-height: 35px;
+}
+.footer{
+    background-color:rgb(218,247, 166, 0.8) ;
+    display: block;
+    height: 200px;
+}
+.footer p{
+    padding-top: 20px;
+    padding: 20px;
+}
+.end{
+    background-color: black;
+    height: 15px;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    #navBar img {
+        position:absolute;
+        left:40px;
+
+    }
+    h1{
+        font-size: 15px;
+        position: absolute;
+        top: 70px;
+    }
+    #navigation p{ 
+        display: none;
+    }
+    h3{
+        position: relative;
+
+        font-size: 25px;
+        margin: 10px;
+    }
+    h6{
+        display: absolute;
+        font-size: 20px;
+        margin: 0px;
+        
+    }
+    h4{
+        margin: 0px;
+        font-size: 25px;
+    }
+    .list{
+        position: relative;
+        right: 100px;
+        width: 200px;
+        display: none;
+
+    }
+    .hero-text{
+        position: relative;
+        width: 140px;
+        left:30px;
+        top:-120px;
+    }
+    #hero-image{
+       position: absolute;
+       top:120px;
+       width: 10%;
+       left:20px;
+       background: url(../images/small.jpg);
+       background-repeat: no-repeat;
+    }
+    #subHeading{
+        border-bottom: 2px solid black;
+        width: 500px;
+        margin: auto;
+        top:400px;
+        position: absolute;
+    }
+    
+    .aboutMe{
+        margin: auto;
+        display: flex;
+        position: relative;
+        height: 550px;
+        width:400px;
+        left: unset;
+        top: 470px;
+    }
+    .aboutMeImage p{
+    width: 300px;
+    border-radius: 30px;
+    right: 310px;
+
+
+    }
+    .social{
+        display: flex;
+        margin: 5px;
+        align-items: center;
+        position: absolute;
+        left:55%;
+        top:500px;
+    }
+    .aboutMeImage{
+        left: -250px;
+        
+    }
+    .workCard{
+        position: relative;
+        top:400px;
+    }
+
+    .button2{
+        position:relative; 
+        top:400px;
+    }
+    .aboutMeImage img{
+        position: relative;
+   
+        
+        background-image: url(../images/we.jpg);
+
+    }
+    .social{
+        top: 780px;
+        z-index: 1;
+    }
+.footer{
+    position: relative;
+    top: 550px;
+}
+.end{
+    position: relative;
+    top: 550px;
+}
+.button3{
+    position: relative;
+    top:135px;
+    right: -270px;
+
+}
+
+
+
+
+    
+}
+
+  
